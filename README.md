@@ -1,4 +1,3 @@
-Tested on TicWatch Pro 2020.
 # Requirement
 * NDK
 * Rooted android devices with NFC
@@ -16,6 +15,7 @@ Tested on TicWatch Pro 2020.
 2. Change the desired ```UID``` inside ```Android_NFC_FIXED_UID/UidCtrl/main.cpp```
 
 3. Inside ```Android_NFC_FIXED_UID/Application.mk```, change the ```APP_BUILD_SCRIPT := path/to/Android.mk``` to the path of ```Android.mk``` under project root folder.
+    
     (ex: ``` APP_BUILD_SCRIPT := /home/zolark173/Documents/Android_NFC_FIXED_UID/Android.mk```)
 
 4. Run ```ndk-build NDK_PROJECT_PATH=/path/to/proj NDK_APPLICATION_MK=/path/to/Application.mk``` to build the project.
@@ -31,6 +31,11 @@ Tested on TicWatch Pro 2020.
     $ su
     $ /data/local/tmp/injector com.android.nfc /data/local/tmp/libuidctrl.so
     ```
+
+# Usage
+Tested on TicWatch Pro 2020 with wearOS 2 (which is base on Android Pie).
+
+UID will remain the same as long as NFC process restart.
 
 
 # Original

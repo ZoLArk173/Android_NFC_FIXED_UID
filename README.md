@@ -35,8 +35,7 @@
 # Usage
 Tested on TicWatch Pro 2020 with wearOS 2 (which is base on Android Pie).
 
-UID will remain the same as long as NFC process restart.
-
+UID will remain the same as long as NFC process doesn't restart.
 
 # Original
 1. 简介

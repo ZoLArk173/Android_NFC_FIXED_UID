@@ -18,7 +18,7 @@ void __attribute__ ((constructor)) main_entry() {
     Hook &hook = Hook::getInstance(true);
     hook.hook();
     if(hook.isHooked()){
-        uint8_t uid[4] = {0x4d, 0xf7, 0xf4, 0x40}; // four byte NFCID1
+        uint8_t uid[4] = {0x00, 0x01, 0x02, 0x03}; // four byte NFCID1
         hook.setNfcId(uid);
     }
     log.print(Log::LOG_LEVEL_INFO, LOG_TAG, "entry out");
